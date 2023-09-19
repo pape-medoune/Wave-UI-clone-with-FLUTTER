@@ -87,8 +87,8 @@ class homePage extends StatelessWidget {
                 decoration: const BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.only(
-                    topRight: Radius.circular(25),
-                    topLeft: Radius.circular(25),
+                    topRight: Radius.circular(20),
+                    topLeft: Radius.circular(20),
                   ),
                 ),
               ),
@@ -97,7 +97,7 @@ class homePage extends StatelessWidget {
               top: MediaQuery.of(context).size.height / 5.5,
               left: 53,
               child: ClipRRect(
-                borderRadius: BorderRadius.circular(50),
+                borderRadius: BorderRadius.circular(30),
                 child: Image.asset(
                   "assets/images/card.png",
                   width: 300,
@@ -120,12 +120,12 @@ class homePage extends StatelessWidget {
                           children: [
                             Image.asset(
                               'assets/images/user.png',
-                              width: 40,
+                              width: 45,
                             ),
                             const SizedBox(
-                              height: 11,
+                              height: 8,
                             ),
-                            Text("Transfert"),
+                            const Text("Transfert"),
                           ],
                         ),
                       ],
@@ -136,7 +136,7 @@ class homePage extends StatelessWidget {
                           children: [
                             Image.asset(
                               'assets/images/pannier.jpg',
-                              width: 50,
+                              width: 55,
                             ),
                             const SizedBox(
                               height: 12,
@@ -154,7 +154,10 @@ class homePage extends StatelessWidget {
                               'assets/images/phone.jpg',
                               width: 50,
                             ),
-                            Text("Crédit"),
+                            const SizedBox(
+                              height: 4,
+                            ),
+                            const Text("Crédit"),
                           ],
                         ),
                       ],
@@ -168,12 +171,25 @@ class homePage extends StatelessWidget {
                               width: 50,
                             ),
                             const SizedBox(
-                              height: 3,
+                              height: 8,
                             ),
                             Text("Banque"),
                           ],
                         ),
                       ],
+                    ),
+                  ],
+                ),
+                const SizedBox(
+                  height: 12,
+                ),
+                Row(
+                  children: [
+                    Container(
+                      width: 411,
+                      height: 8,
+                      decoration: const BoxDecoration(
+                          color: Color.fromARGB(124, 158, 158, 158)),
                     ),
                   ],
                 ),
